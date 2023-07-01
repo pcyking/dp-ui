@@ -1,0 +1,23 @@
+{
+  "name": "@dp-ui/cli",
+  "version": "1.0.0",
+  "description": "命令行工具",
+  "main": "index.js",
+  "scripts": {
+    "gen": "ts-node ./index.ts create"
+  },
+  "keywords": [],
+  "author": "大彭",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/inquirer": "8.2.5",
+    "@types/shelljs": "^0.8.12",
+    "chalk": "4.1.2",
+    "commander": "9.4.1",
+    "inquirer": "8.2.5",
+    "log-symbols": "4.1.0",
+    "ora": "5.4.1",
+    "shelljs": "^0.8.5",
+    "ts-node": "^10.9.1"
+  }
+}

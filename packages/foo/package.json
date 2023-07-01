@@ -1,0 +1,15 @@
+{
+  "name": "@dp-ui/foo",
+  "version": "1.0.0",
+  "description": "示例组件",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "大彭",
+  "license": "ISC",
+  "dependencies": {
+    "@dp-ui/utils": "workspace:^"
+  }
+}

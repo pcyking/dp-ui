@@ -1,0 +1,16 @@
+{
+  "name": "@dp-ui/dp-demo-ui",
+  "version": "1.0.0",
+  "description": "组件库入口",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "大彭",
+  "license": "ISC",
+  "dependencies": {
+    "@dp-ui/card": "workspace:^",
+    "@dp-ui/foo": "workspace:^"
+  }
+}
