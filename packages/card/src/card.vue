@@ -5,7 +5,6 @@
 </template>
 
 <script lang="ts" setup name="dp-card">
-import { defineProps } from 'vue'
 import { cardProps } from './types'
 
 defineProps(cardProps)

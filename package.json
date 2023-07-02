@@ -1,14 +1,42 @@
 {
-  "name": "dpUi",
+  "name": "dp-ui",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
-  "type": "module",
+  "private": false,
+  "main": "./lib/dp-ui.umd.js",
+  "module": "./lib/dp-ui.es.js",
+  "types": "./lib/dp-ui/index.d.ts",
+  "files": [
+    "./lib",
+    "package.json",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "require": "./lib/dp-ui.umd.js",
+      "import": "./lib/dp-ui.es.js"
+    }
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev:dev": "pnpm run -C example dev:dev",
+    "dev:uat": "pnpm run -C example dev:uat",
+    "dev:prod": "pnpm run -C example dev:prod",
+    "build:dev": "pnpm run -C example build:dev",
+    "build:uat": "pnpm run -C example build:uat",
+    "build:prod": "pnpm run -C example build:prod",
+    "preview:example": "pnpm run -C example preview",
+    "build:lib": "pnpm run -C packages/dp-demo-ui build",
+    "docs:dev": "pnpm run -C docs dev",
+    "docs:build": "pnpm run -C docs build",
+    "docs:preview": "pnpm run -C docs serve",
+    "docs:deploy": "pnpm run docs:build && gh-pages -d docs/.vitepress/dist",
+    "gen:component": "pnpm run -C cli gen",
+    "start:verdaccio": "pnpm verdaccio",
+    "pub:local": "pnpm publish --registry http://localhost:4873/",
+    "lint": "eslint \"{cli,packages,docs,example}/**/*.{js,ts,vue,jsx,tsx}\" --fix"
   },
   "keywords": [],
-  "author": "",
+  "author": "大彭",
   "license": "ISC",
   "workspaces": [
     "packages/*",
@@ -27,6 +55,7 @@
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
-    "eslint-plugin-vue": "^9.15.1"
+    "eslint-plugin-vue": "^9.15.1",
+    "verdaccio": "^5.25.0"
   }
 }
