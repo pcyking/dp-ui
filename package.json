@@ -5,7 +5,7 @@
   "private": false,
   "main": "./lib/dp-ui.umd.js",
   "module": "./lib/dp-ui.es.js",
-  "types": "./lib/dp-ui/index.d.ts",
+  "types": "./lib/dp-demo-ui/index.d.ts",
   "files": [
     "./lib",
     "package.json",
