@@ -11,7 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "@dp-ui/card": "workspace:^",
-    "@dp-ui/foo": "workspace:^"
+    "@dp-ui/foo": "workspace:^",
+    "@vitejs/plugin-vue": "^4.1.0"
   },
   "devDependencies": {
     "rimraf": "^5.0.1",

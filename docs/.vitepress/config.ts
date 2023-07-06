@@ -18,6 +18,7 @@ const sidebar: DefaultTheme.Sidebar = {
     }
   ],
   '/components': [{
+    text: '组件',
     items: [
       ...components
     ]
