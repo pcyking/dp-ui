@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="color: red;">
     dp-card
   </div>
 </template>

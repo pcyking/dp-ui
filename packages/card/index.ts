@@ -1,11 +1,6 @@
 import Card from './src/card.vue'
-import { App } from 'vue'
+import { withInstall } from '../withInstall'
 
 Card.name = 'dp-card'
-
-Card.install = (app: App): void => {
-  // 注册组件
-  app.component(Card.name, Card)
-}
-
-export default Card
+const DpCard = withInstall(Card)
+export default DpCard

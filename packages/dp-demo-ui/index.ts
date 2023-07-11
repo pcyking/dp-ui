@@ -1,6 +1,6 @@
 import { App } from 'vue'
-import Foo from '@dp-ui/foo'
-import Card from '@dp-ui/card'
+import Foo from '../foo'
+import Card from '../card'
 import '../scss/index.scss'
 
 const components = [
@@ -15,6 +15,8 @@ const install = (app: App): void => {
   })
 }
 
+// 按需引入
+export { Foo, Card }
 export default {
   install
 }
