@@ -37,7 +37,7 @@ export default defineConfig({
     siteTitle: 'dp-admin-ui',
     outline: 3,
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/pcyking/dp-ui' }
     ],
     nav,
     sidebar
