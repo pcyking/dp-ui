@@ -14,7 +14,6 @@
   },
   "dependencies": {
     "@dp-ui/dp-demo-ui": "workspace:^",
-    "element-plus": "^2.3.7",
     "vite-plugin-eslint": "^1.8.1",
     "vue": "^3.3.4"
   },

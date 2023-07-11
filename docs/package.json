@@ -2,7 +2,9 @@
   "name": "@dp-ui/docs",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/dp-demo-ui.umd.js",
+  "module": "lib/dp-demo-ui.umd.js",
+  "private": false,
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",
@@ -12,12 +14,22 @@
   "author": "大彭",
   "license": "ISC",
   "devDependencies": {
+    "chalk": "4.1.2",
+    "consola": "^3.2.3",
+    "escape-html": "^1.0.3",
+    "markdown-it": "^13.0.1",
+    "markdown-it-container": "^3.0.0",
+    "prismjs": "^1.29.0",
     "vitepress": "1.0.0-beta.3"
   },
   "dependencies": {
     "@dp-ui/dp-demo-ui": "workspace:^",
+    "@element-plus/icons-vue": "^2.1.0",
+    "@types/node": "^20.4.1",
     "@vitepress-demo-preview/component": "^2.3.0",
     "@vitepress-demo-preview/plugin": "^1.2.0",
-    "element-plus": "^2.3.7"
+    "@vueuse/core": "^10.2.1",
+    "element-plus": "^2.3.7",
+    "normalize.css": "^8.0.1"
   }
 }

@@ -1,15 +1,15 @@
 ---
 layout: home
 
-title: DP-DEMO-UI
+title: DP-UI
 editLink: true
 lastUpdated: true
 hero:
-  name: dp-demo-ui
+  name: dp-ui
   text: DP Vue3企业级中后台组件库
   tagline: 组件库描述 / SLOGAN
   image:
-    src: /logo.png
+    src: /logo.jpg
     alt: dp-admin-ui
   actions:
     - theme: brand
