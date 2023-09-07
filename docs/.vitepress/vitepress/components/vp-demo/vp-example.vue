@@ -26,6 +26,7 @@ onBeforeMount(() => {
   const modules = import.meta.glob(`../../../../examples/*/*.vue`, {
     eager: true,
   })
+
   // 动态加载示列组件
   for (const modulesKey in modules) {
     const module = modules[modulesKey]
@@ -70,8 +71,7 @@ onBeforeMount(() => {
   }
 }
 .example-component {
-  // min-height: 86px;
-  padding: 0 24px 20px;
+  padding: 10px 20px 10px;
   &--spin {
     width: 36px;
     height: 36px;

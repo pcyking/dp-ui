@@ -16,9 +16,14 @@ export default defineConfig({
     }
   },
   server: {
-    port: 3000,
+    headers: {
+      "Access-Control-Allow-Origin": "*"
+    },
+    host: "0.0.0.0",
+    port: 3300,
+    open: true,
     cors: true,
-    proxy: {}
+    https: false,
   },
   envDir: path.resolve(__dirname, 'env'),
   build: {

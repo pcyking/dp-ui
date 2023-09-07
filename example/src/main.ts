@@ -3,12 +3,12 @@ import './style.css'
 import App from './App.vue'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
-// import DpUi from '@dp-ui/dp-demo-ui' // 全局引入
+import DpElUi from 'dp-el-ui' // 全局引入
 
 const env = import.meta.env
 console.log(env)
 
 const app = createApp(App)
 app.use(ElementPlus)
-// app.use(DpUi)
+app.use(DpElUi)
 app.mount('#app')

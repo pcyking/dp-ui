@@ -1,11 +1,10 @@
 import { DefaultTheme, defineConfig } from 'vitepress'
-import { componentPreview, containerPreview } from '@vitepress-demo-preview/plugin'
 import { components } from '../components'
 import { mdPlugin } from './config/plugins'
 
 const nav: DefaultTheme.NavItem[] = [
   { text: '指南', link: '/guide/' },
-  { text: '组件', link: '/components/foo' }
+  { text: '组件', link: '/components/DpSelect/base.md' }
 ]
 
 const sidebar: DefaultTheme.Sidebar = {
@@ -42,17 +41,6 @@ export default defineConfig({
     nav,
     sidebar
   },
-  // markdown: {
-  //   theme: {
-  //     light: 'vitesse-light',
-  //     dark: 'vitesse-dark'
-  //   },
-  //   lineNumbers: true,
-  //   config(md) {
-  //     md.use(componentPreview)
-  //     md.use(containerPreview)
-  //   }
-  // }
   markdown: {
     config: (md) => mdPlugin(md),
   },

@@ -1,20 +1,42 @@
 <template>
-  <div class="site">
-    <h1>组件库测试站点 dp-ui</h1>
-    <p>测试站点主要用于开发过程中测试组件，即在开发过程中由业务驱动组件开发。</p>
-    <Card :msg="msg"></Card>
-    <Foo :msg="msg"></Foo>
-  </div>
+  <h1>欢迎vite+vue3+ts+pinia+element-plus项目</h1>
+  <el-row class="mb-4">
+    <el-button>Default</el-button>
+    <el-button type="primary">Primary</el-button>
+    <div>
+      <DpSelect       valueKey="value"
+      v-model="selectedValue"
+      :optionsSource="stepList"
+      placeholder="请选择"
+      :multiple="true"
+      @change="selectChange"></DpSelect>
+    </div>
+  </el-row>
 </template>
-<script setup lang="ts">
-import { ref } from 'vue'
-import { Card, Foo } from '@dp-ui/dp-demo-ui'
-
-const msg = ref('hello w发发发orld')
+<script lang="ts" setup name="home">
+import { onMounted, ref } from 'vue'
+onMounted(() => {
+  console.log('===')
+})
+const selectedValue = ref<any>()
+const stepList = [
+  {
+    label: 'label1',
+    value: 'value1'
+  },
+  {
+    label: 'label2',
+    value: 'value2'
+  },
+  {
+    label: 'label3',
+    value: 'value3'
+  }
+]
+const selectChange = (val:any) => {
+  console.log(val)
+}
 </script>
 
-<style scoped lang="scss">
-.site {
-  padding: 20px;
-}
+<style lang="scss" scoped>
 </style>

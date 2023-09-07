@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --mode dev",
+    "dev": "vite",
     "dev:uat": "vite --mode uat",
     "dev:prod": "vite --mode prod",
     "build": "vue-tsc --noEmit && vite build --mode dev",
@@ -13,7 +13,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@dp-ui/dp-demo-ui": "workspace:^",
+    "dp-el-ui": "workspace:^",
     "vite-plugin-eslint": "^1.8.1",
     "vue": "^3.3.4"
   },
